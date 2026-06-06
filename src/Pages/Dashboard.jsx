@@ -121,7 +121,41 @@ function Dashboard() {
                     </div>
                 )}
 
-               
+                {/* Filters + Add Button */}
+                <div className="flex flex-wrap gap-3 mb-4 items-center">
+                    {/* Filters  
+                    <input
+                        placeholder="Search company..."
+                        value={companyFilter}
+                        onChange={(e) => setCompanyFilter(e.target.value)}
+                        className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-blue-500"
+                    />
+                    <select
+                        value={statusFilter}
+                        onChange={(e) => setStatusFilter(e.target.value)}
+                        className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-blue-500"
+                    >
+                        <option value="">All Status</option>
+                        <option>Applied</option>
+                        <option>Interview</option>
+                        <option>Selected</option>
+                        <option>Rejected</option>
+                        <option>Ghosted</option>
+                        <option>Follow Up</option>
+                    </select>
+                    <button
+                        onClick={fetchData}
+                        className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm hover:bg-gray-300"
+                    >
+                        Search
+                    </button> */}
+                    <button
+                        onClick={() => setShowForm(!showForm)}
+                        className="ml-auto bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700"
+                    >
+                        {showForm ? 'Cancel' : '+ Add Application'}
+                    </button>
+                </div>
 
                 {/* Add Form */}
                 {showForm && (
